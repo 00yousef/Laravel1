@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Présentation du projet Billio : un outil de gestion conçu autour des besoins des freelances." />
+    <title>Présentation du projet | Billio</title>
+  </head>
+  <body x-data="{ darkMode: false }" x-init="darkMode = JSON.parse(localStorage.getItem('darkMode') || 'false'); $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))" :class="{'dark bg-gray-900': darkMode}">
+    <include src="./partials/public-nav.html"></include>
+    <main class="mx-auto max-w-5xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
+      <header class="max-w-3xl">
+        <p class="text-sm font-semibold tracking-wide text-brand-500 uppercase">Présentation du projet</p>
+        <h1 class="mt-3 text-4xl font-bold text-gray-900 sm:text-5xl dark:text-white">Billio : simplifier la gestion quotidienne des freelances</h1>
+        <p class="mt-6 text-xl leading-8 text-gray-600 dark:text-gray-300">Une idée d’application pour réunir le suivi des clients, du temps de travail et de la facturation dans un espace clair.</p>
+      </header>
+
+      <section class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" aria-label="Fiche synthétique du projet">
+        <div class="rounded-xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-gray-800"><p class="text-xs font-medium tracking-wide text-gray-500 uppercase dark:text-gray-400">Nom du projet</p><p class="mt-2 font-semibold text-gray-900 dark:text-white">Billio <span class="text-sm font-normal text-gray-500">(nom provisoire)</span></p></div>
+        <div class="rounded-xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-gray-800"><p class="text-xs font-medium tracking-wide text-gray-500 uppercase dark:text-gray-400">Domaine</p><p class="mt-2 font-semibold text-gray-900 dark:text-white">Gestion d’activité</p></div>
+        <div class="rounded-xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-gray-800"><p class="text-xs font-medium tracking-wide text-gray-500 uppercase dark:text-gray-400">Public principal</p><p class="mt-2 font-semibold text-gray-900 dark:text-white">Freelances et indépendants</p></div>
+        <div class="rounded-xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-gray-800"><p class="text-xs font-medium tracking-wide text-gray-500 uppercase dark:text-gray-400">État présenté</p><p class="mt-2 font-semibold text-gray-900 dark:text-white">Concept et maquette web</p></div>
+      </section>
+
+      <div class="mt-14 space-y-14">
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">1. Le contexte et le problème</h2>
+          <div class="mt-4 space-y-4 leading-7 text-gray-600 dark:text-gray-300">
+            <p>Un freelance doit à la fois réaliser ses missions et assurer le suivi administratif de son activité. Les coordonnées des clients, les heures travaillées, les informations de mission et les factures peuvent finir réparties entre des documents, des calendriers et plusieurs outils.</p>
+            <p>Cette dispersion peut rendre plus difficile le suivi d’une mission : retrouver une information prend du temps, les heures doivent être rapprochées des prestations et il faut penser à vérifier l’état des factures. Le problème auquel répond Billio est donc le manque de centralisation et de visibilité dans la gestion courante.</p>
+            <p class="rounded-lg border-l-4 border-brand-500 bg-gray-50 px-5 py-4 text-gray-700 dark:bg-gray-800 dark:text-gray-200"><strong>Question de départ :</strong> comment aider un indépendant à suivre ses clients, son temps et sa facturation sans multiplier les outils ?</p>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">2. L’idée de la solution</h2>
+          <p class="mt-4 leading-7 text-gray-600 dark:text-gray-300">Billio est le concept d’un outil de gestion léger qui rassemble les informations principales d’une activité indépendante. Chaque client peut être associé à ses projets, le temps passé peut être suivi, puis les prestations peuvent servir de base à la préparation et au suivi des factures. Un tableau de bord donne une vue d’ensemble des éléments à traiter.</p>
+          <p class="mt-4 leading-7 text-gray-600 dark:text-gray-300">L’objectif n’est pas de remplacer tous les outils professionnels, mais de proposer un point de repère simple pour les tâches récurrentes. Le nom, les fonctions et le périmètre restent ajustables en fonction des besoins observés.</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">3. À qui s’adresse le projet ?</h2>
+          <div class="mt-5 grid gap-5 md:grid-cols-3">
+            <article class="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-800"><h3 class="font-semibold text-gray-900 dark:text-white">Freelance en lancement</h3><p class="mt-2 text-sm leading-6 text-gray-600 dark:text-gray-300">Souhaite structurer le suivi de ses premiers clients et missions.</p></article>
+            <article class="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-800"><h3 class="font-semibold text-gray-900 dark:text-white">Indépendant avec plusieurs clients</h3><p class="mt-2 text-sm leading-6 text-gray-600 dark:text-gray-300">A besoin de retrouver rapidement les projets, heures et factures associés à chaque client.</p></article>
+            <article class="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-800"><h3 class="font-semibold text-gray-900 dark:text-white">Petite activité de service</h3><p class="mt-2 text-sm leading-6 text-gray-600 dark:text-gray-300">Recherche une vue d’ensemble simple de son travail administratif courant.</p></article>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">4. Objectifs du projet</h2>
+          <ul class="mt-5 grid gap-4 sm:grid-cols-2">
+            <li class="rounded-xl bg-gray-50 p-5 leading-6 text-gray-700 dark:bg-gray-800 dark:text-gray-300"><strong class="text-gray-900 dark:text-white">Centraliser :</strong> réunir les données utiles sur les clients et leurs missions.</li>
+            <li class="rounded-xl bg-gray-50 p-5 leading-6 text-gray-700 dark:bg-gray-800 dark:text-gray-300"><strong class="text-gray-900 dark:text-white">Suivre :</strong> relier le temps travaillé aux projets concernés.</li>
+            <li class="rounded-xl bg-gray-50 p-5 leading-6 text-gray-700 dark:bg-gray-800 dark:text-gray-300"><strong class="text-gray-900 dark:text-white">Anticiper :</strong> rendre visibles les factures à préparer ou à suivre.</li>
+            <li class="rounded-xl bg-gray-50 p-5 leading-6 text-gray-700 dark:bg-gray-800 dark:text-gray-300"><strong class="text-gray-900 dark:text-white">Simplifier :</strong> rendre les informations courantes faciles à consulter.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">5. Fonctionnement envisagé</h2>
+          <ol class="mt-5 grid gap-4 md:grid-cols-4">
+            <li class="rounded-xl border border-gray-200 p-5 dark:border-gray-800"><span class="text-sm font-semibold text-brand-500">Étape 1</span><h3 class="mt-2 font-semibold text-gray-900 dark:text-white">Créer un client</h3><p class="mt-2 text-sm leading-6 text-gray-600 dark:text-gray-300">Enregistrer ses coordonnées et les détails utiles.</p></li>
+            <li class="rounded-xl border border-gray-200 p-5 dark:border-gray-800"><span class="text-sm font-semibold text-brand-500">Étape 2</span><h3 class="mt-2 font-semibold text-gray-900 dark:text-white">Organiser une mission</h3><p class="mt-2 text-sm leading-6 text-gray-600 dark:text-gray-300">Associer un projet à un client et définir son suivi.</p></li>
+            <li class="rounded-xl border border-gray-200 p-5 dark:border-gray-800"><span class="text-sm font-semibold text-brand-500">Étape 3</span><h3 class="mt-2 font-semibold text-gray-900 dark:text-white">Noter le temps</h3><p class="mt-2 text-sm leading-6 text-gray-600 dark:text-gray-300">Saisir les heures consacrées à la mission.</p></li>
+            <li class="rounded-xl border border-gray-200 p-5 dark:border-gray-800"><span class="text-sm font-semibold text-brand-500">Étape 4</span><h3 class="mt-2 font-semibold text-gray-900 dark:text-white">Suivre la facture</h3><p class="mt-2 text-sm leading-6 text-gray-600 dark:text-gray-300">Préparer une facture et consulter son statut.</p></li>
+          </ol>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">6. Périmètre d’une première version</h2>
+          <div class="mt-5 grid gap-6 md:grid-cols-2">
+            <div class="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-800"><h3 class="font-semibold text-gray-900 dark:text-white">Indispensable — première version</h3><ul class="mt-3 list-inside list-disc space-y-2 text-sm leading-6 text-gray-600 dark:text-gray-300"><li>Inscription, connexion et déconnexion.</li><li>Gestion des clients et des projets liés à un client.</li><li>Saisie manuelle du temps ou démarrage/arrêt d’un chronomètre.</li><li>Facture depuis le temps non facturé ou des lignes fixes.</li><li>Export PDF et statuts : brouillon, envoyée, payée, en retard.</li></ul></div>
+            <div class="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-800"><h3 class="font-semibold text-gray-900 dark:text-white">Améliorations progressives</h3><ul class="mt-3 list-inside list-disc space-y-2 text-sm leading-6 text-gray-600 dark:text-gray-300"><li><strong>Souhaité :</strong> tableau de bord avec revenus, impayés et heures par projet.</li><li><strong>Souhaité :</strong> envoi des factures par e-mail.</li><li><strong>Envisagé ensuite :</strong> rappels automatiques pour les retards.</li><li><strong>Envisagé ensuite :</strong> espace client pour consulter et régler les factures.</li></ul></div>
+          </div>
+          <p class="mt-4 text-sm leading-6 text-gray-500 dark:text-gray-400">Cette liste décrit une proposition de périmètre, pas des fonctionnalités déjà réalisées.</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">7. Architecture technique envisagée</h2>
+          <p class="mt-4 leading-7 text-gray-600 dark:text-gray-300">La conception prévoit une séparation entre l’interface web et le serveur applicatif. Le navigateur affiche les pages en HTML, Tailwind CSS et Alpine.js, puis communique avec une API REST développée avec Laravel. L’API applique les règles métier et échange avec une base de données MySQL. Sanctum est prévu pour l’authentification. La génération PDF, l’envoi d’e-mails et les rappels automatiques pourront être pris en charge par des composants dédiés côté serveur.</p>
+          <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="rounded-xl border border-gray-200 p-5 dark:border-gray-800"><p class="text-xs font-semibold text-brand-500 uppercase">Interface</p><p class="mt-2 font-semibold text-gray-900 dark:text-white">HTML · Tailwind · Alpine</p><p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Pages publiques et espace de gestion.</p></div>
+            <div class="rounded-xl border border-gray-200 p-5 dark:border-gray-800"><p class="text-xs font-semibold text-brand-500 uppercase">Serveur</p><p class="mt-2 font-semibold text-gray-900 dark:text-white">Laravel · API REST</p><p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Authentification prévue avec Sanctum.</p></div>
+            <div class="rounded-xl border border-gray-200 p-5 dark:border-gray-800"><p class="text-xs font-semibold text-brand-500 uppercase">Données</p><p class="mt-2 font-semibold text-gray-900 dark:text-white">MySQL</p><p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Stockage relationnel des comptes et opérations.</p></div>
+            <div class="rounded-xl border border-gray-200 p-5 dark:border-gray-800"><p class="text-xs font-semibold text-brand-500 uppercase">Services prévus</p><p class="mt-2 font-semibold text-gray-900 dark:text-white">PDF · E-mail · Planification</p><p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Documents et automatisations métier.</p></div>
+          </div>
+          <h3 class="mt-8 font-semibold text-gray-900 dark:text-white">Organisation principale des données</h3>
+          <p class="mt-2 leading-7 text-gray-600 dark:text-gray-300">Un compte freelance possède ses clients ; chaque client regroupe ses projets et reçoit ses factures. Les projets contiennent les entrées de temps. Une facture regroupe des lignes de facturation qui peuvent provenir du temps suivi ou d’éléments fixes, et peut être associée à un ou plusieurs paiements. Chaque numéro de facture doit être unique pour son propriétaire, et une entrée de temps ne doit être facturée qu’une seule fois.</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">8. Exemple de scénario : facturer une mission</h2>
+          <ol class="mt-5 space-y-3">
+            <li class="flex gap-4 rounded-xl bg-gray-50 p-4 dark:bg-gray-800"><span class="font-bold text-brand-500">01</span><span class="leading-6 text-gray-700 dark:text-gray-300">Le freelance ouvre un projet et demande la création d’une facture.</span></li>
+            <li class="flex gap-4 rounded-xl bg-gray-50 p-4 dark:bg-gray-800"><span class="font-bold text-brand-500">02</span><span class="leading-6 text-gray-700 dark:text-gray-300">Billio affiche les heures non encore facturées pour ce projet.</span></li>
+            <li class="flex gap-4 rounded-xl bg-gray-50 p-4 dark:bg-gray-800"><span class="font-bold text-brand-500">03</span><span class="leading-6 text-gray-700 dark:text-gray-300">Le freelance choisit les éléments à facturer, ajoute si besoin des lignes fixes et indique une échéance.</span></li>
+            <li class="flex gap-4 rounded-xl bg-gray-50 p-4 dark:bg-gray-800"><span class="font-bold text-brand-500">04</span><span class="leading-6 text-gray-700 dark:text-gray-300">Le système calcule le sous-total, la taxe et le total, puis enregistre la facture comme brouillon.</span></li>
+            <li class="flex gap-4 rounded-xl bg-gray-50 p-4 dark:bg-gray-800"><span class="font-bold text-brand-500">05</span><span class="leading-6 text-gray-700 dark:text-gray-300">Le freelance exporte le PDF ou envoie la facture ; il peut ensuite suivre son statut jusqu’au paiement.</span></li>
+          </ol>
+          <p class="mt-4 text-sm leading-6 text-gray-500 dark:text-gray-400">Statuts prévus : brouillon, envoyée, payée et en retard. La modification ou la suppression est réservée aux brouillons dans la conception actuelle.</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">9. Acteurs et sécurité</h2>
+          <div class="mt-5 grid gap-5 md:grid-cols-3">
+            <article class="rounded-xl border border-gray-200 p-5 dark:border-gray-800"><h3 class="font-semibold text-gray-900 dark:text-white">Visiteur</h3><p class="mt-2 text-sm leading-6 text-gray-600 dark:text-gray-300">Consulte les pages publiques, contacte l’équipe et peut créer un compte ou se connecter.</p></article>
+            <article class="rounded-xl border border-gray-200 p-5 dark:border-gray-800"><h3 class="font-semibold text-gray-900 dark:text-white">Freelance connecté</h3><p class="mt-2 text-sm leading-6 text-gray-600 dark:text-gray-300">Gère uniquement ses propres clients, projets, temps, factures et paiements.</p></article>
+            <article class="rounded-xl border border-gray-200 p-5 dark:border-gray-800"><h3 class="font-semibold text-gray-900 dark:text-white">Système</h3><p class="mt-2 text-sm leading-6 text-gray-600 dark:text-gray-300">Pourrait détecter les échéances dépassées et envoyer des rappels planifiés.</p></article>
+          </div>
+          <p class="mt-4 leading-7 text-gray-600 dark:text-gray-300">Les règles de sécurité prévues comprennent le hachage des mots de passe, la validation des données côté serveur, la limitation des tentatives de connexion et l’application de politiques d’accès. L’identifiant du compte propriétaire doit permettre de cloisonner les données afin qu’un utilisateur ne puisse pas consulter celles d’un autre.</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">10. Réalisation et validation</h2>
+          <div class="mt-4 space-y-4 leading-7 text-gray-600 dark:text-gray-300">
+            <p>Le dépôt actuel contient la maquette publique réalisée à partir du template TailAdmin avec HTML, Tailwind CSS, Alpine.js et Webpack. Le document de conception propose pour la suite un backend Laravel avec API REST et Sanctum, ainsi qu’une base MySQL. Ces choix décrivent l’architecture cible ; ils ne signifient pas que les fonctions métier sont déjà implémentées dans cette maquette.</p>
+            <p>Pour vérifier que l’idée répond à un besoin réel, une prochaine étape serait d’échanger avec quelques freelances, de leur demander comment ils gèrent aujourd’hui ces tâches, puis de leur faire essayer une maquette des parcours principaux. Leurs retours aideraient à prioriser les fonctions et à simplifier l’interface.</p>
+          </div>
+          <div class="mt-6 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800">
+            <div class="grid gap-2 bg-gray-50 p-4 sm:grid-cols-3 dark:bg-gray-800"><div><p class="text-xs font-medium text-gray-500 uppercase dark:text-gray-400">À compléter</p><p class="mt-1 text-sm text-gray-800 dark:text-gray-200">Besoin confirmé par : <strong>[entretiens, enquête ou autre]</strong></p></div><div><p class="text-xs font-medium text-gray-500 uppercase dark:text-gray-400">À compléter</p><p class="mt-1 text-sm text-gray-800 dark:text-gray-200">Prototype réalisé : <strong>[écrans ou parcours]</strong></p></div><div><p class="text-xs font-medium text-gray-500 uppercase dark:text-gray-400">À compléter</p><p class="mt-1 text-sm text-gray-800 dark:text-gray-200">Prochaine étape : <strong>[action prévue]</strong></p></div></div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">11. Étapes de réalisation proposées</h2>
+          <ol class="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <li class="rounded-xl border border-gray-200 p-4 text-sm leading-6 text-gray-700 dark:border-gray-800 dark:text-gray-300"><strong class="text-gray-900 dark:text-white">1. Fondations :</strong> initialiser Laravel, les migrations, les modèles et les données de démonstration.</li>
+            <li class="rounded-xl border border-gray-200 p-4 text-sm leading-6 text-gray-700 dark:border-gray-800 dark:text-gray-300"><strong class="text-gray-900 dark:text-white">2. Comptes :</strong> mettre en place l’inscription, la connexion et la déconnexion.</li>
+            <li class="rounded-xl border border-gray-200 p-4 text-sm leading-6 text-gray-700 dark:border-gray-800 dark:text-gray-300"><strong class="text-gray-900 dark:text-white">3. Clients :</strong> créer l’API et les écrans de gestion des clients.</li>
+            <li class="rounded-xl border border-gray-200 p-4 text-sm leading-6 text-gray-700 dark:border-gray-800 dark:text-gray-300"><strong class="text-gray-900 dark:text-white">4. Projets et temps :</strong> relier les missions aux clients et enregistrer les heures.</li>
+            <li class="rounded-xl border border-gray-200 p-4 text-sm leading-6 text-gray-700 dark:border-gray-800 dark:text-gray-300"><strong class="text-gray-900 dark:text-white">5. Facturation :</strong> gérer les lignes, calculs, statuts et export PDF.</li>
+            <li class="rounded-xl border border-gray-200 p-4 text-sm leading-6 text-gray-700 dark:border-gray-800 dark:text-gray-300"><strong class="text-gray-900 dark:text-white">6. Finalisation :</strong> tableau de bord, e-mails, rappels, pages publiques, tests et préparation au déploiement.</li>
+          </ol>
+        </section>
+
+        <section class="rounded-2xl border border-brand-100 bg-brand-50 p-6 sm:p-8 dark:border-brand-900 dark:bg-gray-800">
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">Conclusion</h2>
+          <p class="mt-4 leading-7 text-gray-700 dark:text-gray-300">Billio propose de répondre à un enjeu concret du travail indépendant : garder une vue cohérente sur les clients, les missions, le temps et la facturation. La valeur du projet dépendra de sa capacité à rester simple, de la pertinence des fonctions retenues et de leur validation auprès des personnes concernées.</p>
+          <p class="mt-4 text-sm leading-6 text-gray-600 dark:text-gray-400"><strong>À personnaliser pour votre présentation :</strong> votre nom, votre formation, l’origine personnelle de l’idée, les recherches déjà menées, l’état réel du prototype et les prochaines étapes.</p>
+        </section>
+      </div>
+
+    </main>
+    <footer class="border-t border-gray-200 px-4 py-6 text-center text-sm text-gray-500 dark:border-gray-800 dark:text-gray-400">© <span id="year"></span> Billio — Nom provisoire du projet.</footer>
+  </body>
+</html>
