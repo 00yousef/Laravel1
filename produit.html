@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="fr">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Les fonctionnalités envisagées pour Billio : clients, temps, factures et tableau de bord." /><title>Produit | Billio</title></head>
+  <body x-data="{ darkMode: false }" x-init="darkMode = JSON.parse(localStorage.getItem('darkMode') || 'false'); $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))" :class="{'dark bg-gray-900': darkMode}">
+    <include src="./partials/public-nav.html"></include>
+    <main class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+      <div class="max-w-3xl"><p class="text-sm font-semibold tracking-wide text-brand-500 uppercase">Le produit</p><h1 class="mt-3 text-4xl font-bold text-gray-900 dark:text-white">Les outils essentiels pour piloter votre activité.</h1><p class="mt-5 text-lg leading-8 text-gray-600 dark:text-gray-300">Voici les fonctionnalités principales envisagées pour Billio. Présentez ici plus précisément ce que votre application propose.</p></div>
+      <div class="mt-12 grid gap-6 md:grid-cols-2">
+        <article class="rounded-2xl border border-gray-200 bg-white p-7 dark:border-gray-800 dark:bg-gray-800"><span class="text-sm font-semibold text-brand-500">01</span><h2 class="mt-3 text-xl font-semibold text-gray-900 dark:text-white">Gestion des clients</h2><p class="mt-3 leading-7 text-gray-600 dark:text-gray-300">Centralisez les coordonnées, les notes et l’historique de vos échanges avec chaque client.</p></article>
+        <article class="rounded-2xl border border-gray-200 bg-white p-7 dark:border-gray-800 dark:bg-gray-800"><span class="text-sm font-semibold text-brand-500">02</span><h2 class="mt-3 text-xl font-semibold text-gray-900 dark:text-white">Suivi du temps</h2><p class="mt-3 leading-7 text-gray-600 dark:text-gray-300">Enregistrez le temps passé sur vos projets et consultez les heures liées à chaque mission.</p></article>
+        <article class="rounded-2xl border border-gray-200 bg-white p-7 dark:border-gray-800 dark:bg-gray-800"><span class="text-sm font-semibold text-brand-500">03</span><h2 class="mt-3 text-xl font-semibold text-gray-900 dark:text-white">Facturation</h2><p class="mt-3 leading-7 text-gray-600 dark:text-gray-300">Préparez vos factures, consultez leur statut et gardez une trace des échéances.</p></article>
+        <article class="rounded-2xl border border-gray-200 bg-white p-7 dark:border-gray-800 dark:bg-gray-800"><span class="text-sm font-semibold text-brand-500">04</span><h2 class="mt-3 text-xl font-semibold text-gray-900 dark:text-white">Tableau de bord</h2><p class="mt-3 leading-7 text-gray-600 dark:text-gray-300">Visualisez en un coup d’œil les projets en cours, le temps suivi et les factures à relancer.</p></article>
+      </div>
+      <a href="contact.html" class="mt-10 inline-flex rounded-lg bg-brand-500 px-6 py-3 font-medium text-white hover:bg-brand-600">Nous contacter</a>
+    </main>
+    <footer class="border-t border-gray-200 px-4 py-6 text-center text-sm text-gray-500 dark:border-gray-800 dark:text-gray-400">© <span id="year"></span> Billio — Fonctionnalités à préciser.</footer>
+  </body>
+</html>
